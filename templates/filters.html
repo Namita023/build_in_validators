@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>
+            Filters in django:
+        </h1>
+        <h2>
+            Original : {{data}}
+        </h2>
+        <h2>
+            Lower Case: {{data|lower}}
+        </h2>
+        <h2>
+            Upper Case: {{data|upper}}
+        </h2>
+        <h2>
+            Title Case: {{data|title}}
+        </h2>
+        <h2>
+            First Capital: {{data|capfirst}}
+        </h2>
+        <h2>
+            Length of the string: {{data|length}}
+        </h2>
+        <h2>
+            To truncate characters: {{data|truncatechars:10}}
+        </h2>
+        <h2>
+            To truncate words: {{data|truncatewords:3}}
+        </h2>
+        <h2>
+            Slice: {{data|slice:10}}
+        </h2>
+        <h2>
+            Plural: 
+            {{c}} thin {{c|pluralize:"thief,thieves"}} thought a {{e}} thought{{e|pluralize}}
+        </h2>
+        <h2>
+            Plural: 
+            {{f}} witch{{f|pluralize:"es"}} watch {{f}} swatch watch{{f|pluralize:"es"}}
+        </h2>
+        <h2>
+            Date Time: {{date}}
+        </h2>
+        <h2>
+            Month: {{date| date:"F"}}
+        </h2>
+        <h2>
+            Month: {{date| date:"F Y"}}
+        </h2>
+    </center>
+</body>
+</html>

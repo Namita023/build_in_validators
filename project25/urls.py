@@ -21,4 +21,5 @@ from app.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('filters/',filters,name='filters'),
+    path('usd_filters/',usd_filters,name="usd_filters.html"),
 ]

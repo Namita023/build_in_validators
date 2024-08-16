@@ -1,0 +1,32 @@
+{% load usdf %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>
+            User defined Filters in django:
+        </h1>
+        <h2>
+            Original : {{data}}
+        </h2>
+        <h2>
+            Swap Case: {{data|swapping}}
+        </h2>
+        <h2>
+            Counting characters: {{data|count:'A'}}
+        </h2>
+        <h2>
+            Delete characters: {{data|deleting:"t"}}
+        </h2>
+        <h2>
+            Startswith: {{data|startswith:"tHiS"}}
+        </h2>
+        
+    </center>
+</body>
+</html>
